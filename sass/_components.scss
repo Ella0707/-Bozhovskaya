@@ -1,0 +1,75 @@
+.logo {
+    width: 13.8rem;
+    height: 7rem;
+    position: relative;
+
+    img {
+        height: 10.5rem;
+        width: 14.8rem;
+        object-fit: contain;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.control {
+    display: flex;
+    width: max-content;
+}
+
+.arrow {
+    width: 4rem;
+    height: 0.3rem;
+    object-fit: contain;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.pagination {
+    @include text (2.2rem, 300, #FFFFFF);
+    width: max-content;
+    margin: 0 3.2rem;
+
+    .swiper-pagination-current {
+        font-weight: 800;
+    }
+}
+
+
+
+.btn {
+    width: 23.2rem;
+    height: 6rem;
+
+    @include text (1.8rem, 600, #FFFFFF);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+
+    border: 0.1rem solid rgba(255, 255, 255, 0.29);
+    border-radius: 4.9rem;
+    position: relative;
+
+    img {
+        width: 4rem;
+        height: 0.6rem;
+        object-fit: contain;
+
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+        transform: translateY(-50%);
+        transition: ease 0.8s;
+    }
+
+    &:hover {
+
+        img {
+            transform: translate(20%, -50%);
+        }
+    }
+}
