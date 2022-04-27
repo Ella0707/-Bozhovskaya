@@ -510,6 +510,7 @@
         bottom: 0;
         left: 50%;
         transform: translate(-43%, 47%);
+        z-index: 2;
     }
     
     &__inner {
@@ -526,7 +527,16 @@
     }
     
     &__item {
+        transition: ease 0.5s;
+        width: max-content;
 
+        transition: ease 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            text-shadow: 0.3rem 0.3rem 5rem #707070;
+        }
+        
         &:first-child {
             margin-left: 58.4vw;
             margin-bottom: 3rem;
@@ -553,6 +563,7 @@
     &__value {
         @include text (5rem, 700, #FFFFFF);
         margin-bottom: 0.5rem;
+      
     }
     
     &__description {
@@ -578,5 +589,7 @@
 
 .services {
     background: #FFFFFF;
+    position: relative;
+    z-index: 1;
     height: 100vh;
 }

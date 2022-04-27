@@ -794,6 +794,7 @@ input[type=number] {
   left: 50%;
   -webkit-transform: translate(-43%, 47%);
           transform: translate(-43%, 47%);
+  z-index: 2;
 }
 .numbers__inner {
   position: relative;
@@ -801,6 +802,18 @@ input[type=number] {
 .numbers__title {
   padding-top: 15.3rem;
   margin-bottom: 3.6rem;
+}
+.numbers__item {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+.numbers__item:hover {
+  text-shadow: 0.3rem 0.3rem 5rem #707070;
 }
 .numbers__item:first-child {
   margin-left: 58.4vw;
@@ -842,6 +855,8 @@ input[type=number] {
 
 .services {
   background: #FFFFFF;
+  position: relative;
+  z-index: 1;
   height: 100vh;
 }
 
