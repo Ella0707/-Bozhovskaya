@@ -280,32 +280,303 @@
             object-fit: contain;
         }
     }
-    
+
     &__control {
         margin: 0 auto;
+    }
+}
+
+
+.whom {
+    padding-top: 20rem;
+    padding-bottom: 16.3rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 20rem;
+        height: 45.8rem;
+        border-radius: 50% 0 0 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(45rem);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     
-    }
-    .control {
-    }
-    
-    &__slider-arrow-prev {
-    
-    }
-    .arrow {
-    }
-    .prev {
-    }
-    
-    &__pagination {
-    
-    }
-    .pagination {
-    }
-    
-    &__slider-arrow-next {
-    
-    }
-    .next {
+    &__title-wrap {
+        margin-bottom: 8.3rem;
     }
 
+    &__content {
+        display: flex;
+    }
+
+    &__box {
+        width: 25%;
+        position: relative;
+        padding: 3.5rem 4.7rem 4.3rem 3.7rem;
+
+        position: relative;
+        cursor: pointer;
+        transition: ease 0.8s;
+
+        &:not(:first-child) {
+            margin-left: -0.1rem;
+        }
+
+        &::before {
+            content: "";
+            width: 90%;
+            height: 0.1rem;
+            background: #707070;
+
+            position: absolute;
+            top: 0rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        &::after {
+            content: "";
+            width: 90%;
+            height: 0.1rem;
+            background: #707070;
+
+            position: absolute;
+            bottom: 0rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            transform: translateY(-4.8rem);
+            z-index: 10;
+
+            &::before, 
+            &::after {
+                background: transparent;
+            }
+
+            .whom__box-inner {
+                &::before, 
+                &::after {
+                    background: transparent;
+                }
+            }
+
+            .whom__box-img-hover {
+                opacity: 1;
+            }
+
+            .whom__img-letter {
+
+                img {
+                    &.start {
+                        opacity: 0;
+                    }
+    
+                    &.hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .whom__box-title,
+            .whom__box-subtitle {
+                color:#ffffff;
+            }
+        }
+    }
+    
+    &__box-img-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        opacity: 0;
+        transition: ease 0.8s;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    
+    &__box-inner {
+
+        &::before {
+            content: "";
+            height: 90%;
+            width: 0.1rem;
+            background: #707070;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            content: "";
+            height: 90%;
+            width: 0.1rem;
+            background: #707070;
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    
+    &__img-letter {
+        width: 8.2rem;
+        height: 9.8rem;
+        margin-bottom: 4.8rem;
+        position: relative;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: ease 0.5s;
+
+            &.hover {
+                opacity: 0;
+            }
+        }
+    }
+    
+    &__box-title {
+        @include text (1.7rem, 800, #FFFFFF);
+        margin-bottom: 2.2rem;
+        position: relative;
+    }
+    
+    &__box-subtitle {
+        @include text (1.7rem, 400, #808080);
+        position: relative;
+        line-height: 1.29;
+    }
+}
+
+
+.numbers {
+
+    height: 81.8rem;
+    margin: 0 16rem;
+    position: relative;
+    
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 5rem;
+
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    &__bg-letters {
+        width: 32rem;
+        height: 32.3rem;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-43%, 47%);
+    }
+    
+    &__inner {
+        position: relative;
+    }
+    
+    &__title {
+        padding-top: 15.3rem;
+        margin-bottom: 3.6rem;
+    }
+    
+    &__content {
+    
+    }
+    
+    &__item {
+
+        &:first-child {
+            margin-left: 58.4vw;
+            margin-bottom: 3rem;
+        }
+
+
+        &:nth-child(2) {
+            margin-left: 3vw;
+            margin-bottom: 5.8rem;
+        }
+
+        &:nth-child(3) {
+            margin-left: 26.8vw;
+            margin-bottom: 0.5rem;
+        }
+
+        &:nth-child(4) {
+            margin-left: 62.7vw;
+        }
+
+    
+    }
+    
+    &__value {
+        @include text (5rem, 700, #FFFFFF);
+        margin-bottom: 0.5rem;
+    }
+    
+    &__description {
+        @include text (1.7rem, 400, #808080);
+
+        position: relative;
+
+        &::before {
+            content:"";
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+
+            background: #ffffff;
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+        }
+    }
+}
+
+
+
+.services {
+    background: #FFFFFF;
+    height: 100vh;
 }
