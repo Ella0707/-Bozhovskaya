@@ -21,10 +21,15 @@
 
 .arrow {
     width: 4rem;
-    height: 0.3rem;
-    object-fit: contain;
-    padding-top: 0.5rem;
+    height: 100%;
     cursor: pointer;
+    padding-top: 0.5rem;
+
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+    
 }
 
 .pagination {
@@ -72,6 +77,12 @@
             transform: translate(20%, -50%);
         }
     }
+
+
+    &.btn--black {
+        border: 0.1rem solid rgba(36, 35, 35, 0.29);
+        color: #323232;
+    }
 }
 
 
@@ -85,6 +96,10 @@
     @include text (5.2rem, 800, #FFFFFF);
     text-transform: uppercase;
     width: 50%;
+
+    &.title--black {
+        color:  #323232;
+    }
 }
 
 .subtitle {

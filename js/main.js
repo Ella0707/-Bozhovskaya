@@ -59,3 +59,85 @@ const projectsrSwiper = new Swiper('.projects__slider', {
         },
     },
 });
+
+
+
+const proccesSwiper = new Swiper('.process__slider', {
+    slidesPerView: 1,
+    // slidesPerView: "auto",
+    // centeredSlides: true,
+    loop: true,
+    speed: 800,
+    navigation: {
+        prevEl: '.process__slider-arrow-prev',
+        nextEl: '.process__slider-arrow-next',
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+
+    // effect: "creative",
+    // creativeEffect: {
+    //   prev: {
+    //     shadow: true,
+    //     translate: [0, 0, -400],
+    //   },
+    //   next: {
+    //     translate: ["100%", 0, 0],
+    //   },
+    // },
+
+    pagination: {
+        el: '.process__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+
+const reviewsSwiper = new Swiper('.reviews__slider', {
+    // slidesPerView: 2,
+    slidesPerView: "auto",
+    // centeredSlides: true,
+    // loop: true,
+    speed: 800,
+    navigation: {
+        prevEl: '.reviews__slider-arrow-prev',
+        nextEl: '.reviews__slider-arrow-next',
+    },
+
+    // effect: "fade",
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+
+    pagination: {
+        el: '.reviews__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
