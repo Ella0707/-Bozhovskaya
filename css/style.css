@@ -1359,7 +1359,23 @@ input[type=number] {
   font-size: 5.2rem;
   font-weight: 800;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
   margin-bottom: 4rem;
+}
+.feedback__title span {
+  position: relative;
+}
+.feedback__title-smile {
+  width: 2.6rem;
+  height: 5.6rem;
+  position: absolute;
+  right: -4rem;
+  top: 0.8rem;
+}
+.feedback__title-smile img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .feedback__subtitle {
   font-size: 1.7rem;

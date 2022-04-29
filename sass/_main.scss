@@ -1111,10 +1111,30 @@
     &__content {
         width: 59rem;
     }
+
     
     &__title {
         @include text (5.2rem, 800, rgba(255, 255, 255, 1));
+        text-transform: uppercase;
         margin-bottom: 4rem;
+
+        span {
+            position: relative;
+        }
+    }
+
+    &__title-smile {
+        width: 2.6rem;
+        height: 5.6rem;
+        
+        position: absolute;
+        right: -4rem;
+        top: 0.8rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
     }
     
     &__subtitle {
