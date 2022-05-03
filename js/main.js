@@ -34,6 +34,7 @@ const bannerSwiper = new Swiper('.banner__slider', {
 const projectsrSwiper = new Swiper('.projects__slider', {
     // slidesPerView: 2.5,
     slidesPerView: "auto",
+    centeredSlides: true,
     // centeredSlides: true,
     loop: true,
     speed: 800,
@@ -58,6 +59,15 @@ const projectsrSwiper = new Swiper('.projects__slider', {
             return number;
         },
     },
+
+    breakpoints: {
+
+        769: {
+    centeredSlides: false,
+
+           
+        }
+    }
 });
 
 

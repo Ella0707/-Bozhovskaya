@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 3rem;
-        padding-bottom: 2.3rem;
+        padding-bottom: 1.3rem;
     }
 
     &__nav-list {
@@ -1139,12 +1139,14 @@
     
     &__subtitle {
         @include text(1.7rem, 400, rgba(128, 128, 128, 1));
-        margin-bottom: 9.1rem;
+        margin-bottom: 9.5rem;
+        width: 70%;
     }
     
     &__contact {
         display: flex;
         justify-content: space-between;
+        width: 78%;
     }
     
     &__contact-item {
@@ -1153,7 +1155,7 @@
     
     &__contact-name {
         @include text (1.6rem, 700, rgba(255, 255, 255, 1));
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.8rem;
     }
     
     &__contact-value {
@@ -1206,7 +1208,7 @@
 
     &__input-name {
         @include text (1.8rem, 400, rgba(123, 123, 123, 1));
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
     
     &__form-bottom {
@@ -1220,12 +1222,125 @@
         @include text (1.8rem, 700, rgba(255, 255, 255, 1));
         display: flex;
         align-items: center;
+        margin-right: 1.8rem;
 
         img {
             width: 3rem;
             height: 3rem;
             object-fit: contain;
             margin-right: 2rem;
+        }
+    }
+}
+
+
+
+.footer {
+    padding-bottom: 10rem;
+    position: relative;
+
+    .container {
+        width: 100%;
+    }
+
+    
+    &__inner {
+    
+    }
+    
+    &__top {
+        padding: 1.6rem 24rem 1.6rem 24rem;
+        border-top: 0.1rem solid rgba(112, 112, 112, 1);
+        border-bottom: 0.1rem solid rgba(112, 112, 112, 1);
+        margin-bottom: 3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    &__logo {
+        width: 12rem;
+        height: 6.5rem;
+        margin-right: 6rem;
+    }
+    
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        @include text (1.8rem, 400, rgba(255, 255, 255, 1));
+    }
+    
+    &__nav-item {
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+    
+    &__social {
+        display: flex;
+        align-items: center;
+        opacity: 0.4;
+    }
+    
+    &__social-item {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24rem;
+    }
+    
+    &__small {
+        @include text (1.8rem, 400, rgba(255, 255, 255, 1));
+    }
+    
+    &__dev {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__dev-name {
+        margin-right: 1.4rem;
+    }
+    
+    &__dev-name-key {
+        @include text (1.6rem, 400, rgba(123, 123, 123, 1));
+        margin-bottom: 0.2rem;
+        text-align: right;
+    }
+    
+    &__dev-name-value {
+        @include text (1.7rem, 375, rgba(255, 255, 255, 1));
+
+        span {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+    }
+    
+    &__dev-logo {
+        width: 4.1rem;
+        height: 4.1rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
         }
     }
 }
