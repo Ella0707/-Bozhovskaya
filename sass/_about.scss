@@ -1,0 +1,147 @@
+.banner-about {
+    margin-bottom: 10rem;
+
+
+    &__inner {
+        position: relative;
+        padding-top: 14rem;
+
+    }
+
+    &__substrate {
+        position: absolute;
+        width: 93.5rem;
+        height: 71.4rem;
+        object-fit: contain;
+        z-index: -1;
+        opacity: 0.04;
+
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    &__img-arrow {
+        width: 1rem;
+        height: 9rem;
+        margin: 0 auto;
+
+    }
+
+
+    &__text-block {
+        width: 60rem;
+        margin: 0 auto 6.2rem auto;
+    }
+
+    &__title {
+        @include text (5.2rem, 800, #FFFFFF);
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        @include text (1.7rem, 400, #808080);
+    }
+}
+
+
+
+.about {
+    margin-bottom: 22rem;
+    
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 6rem;
+        row-gap: 14.5rem;
+    }
+    
+    &__box {
+        width: 36rem;
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(1) {
+            .about__box-img {
+                width: 18rem;
+            }
+        }
+
+        &:nth-child(2) {
+            .about__box-img {
+                width: 18rem;
+            }
+        }
+
+        &:nth-child(3) {
+            .about__box-img {
+                width: 19rem;
+            }
+        }
+
+        &:nth-child(5) {
+            .about__box-img {
+                width: 16rem;
+            }
+        }
+
+    }
+    
+    &__box-img {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 4rem;
+    }
+    
+    &__box-title {
+        @include text (5.2rem, 800, #FFFFFF);
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        @include text (1.7rem, 400, #808080);
+        margin-top: auto;
+        line-height: 1.35;
+    }
+}
+
+
+
+.article.page-about {
+    background: inherit;
+
+    .article {
+
+        &::before {
+            content: none;
+        }
+
+        &__title {
+            margin-bottom: 6.5rem;
+        }
+
+        &__inner {
+            align-items: center;
+        }
+
+        &__sticker {
+            box-shadow: 1.5rem 2rem 4.4rem rgba(0, 0, 0, 0.15);
+        }
+
+        &__content {
+            padding: 9rem 2rem 5.5rem 9.8rem;
+        }
+
+
+        &__photo {
+            width: 44.9rem;
+            height: 24.4rem;
+            margin-left: 6rem;
+        }
+    }
+}

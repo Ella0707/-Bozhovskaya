@@ -63,9 +63,7 @@ const projectsrSwiper = new Swiper('.projects__slider', {
     breakpoints: {
 
         769: {
-    centeredSlides: false,
-
-           
+            centeredSlides: false,
         }
     }
 });

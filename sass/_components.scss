@@ -144,14 +144,23 @@
         }
     }
 
+    .control {
+        align-items: center;
+    }
+
     .arrow {
-        width: 8rem;
-        padding-top: 0.5rem;
+        width: 9rem;
+        padding-top: 0rem;
     }
     
     .pagination {
         font-size: 3.6rem;
         margin: 0 6rem;
+
+
+        .swiper-pagination-current {
+            margin-right: 0.8rem;
+        }
     }
 
 
