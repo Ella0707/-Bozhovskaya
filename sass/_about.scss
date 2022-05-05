@@ -1,5 +1,21 @@
 .banner-about {
     margin-bottom: 10rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 45.8rem;
+        height: 45.8rem;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(20rem);
+
+        position: absolute;
+        bottom: -20rem;
+        left: 0;
+        transform: translateX(-50%);
+    }
 
 
     &__inner {
@@ -143,5 +159,204 @@
             height: 24.4rem;
             margin-left: 6rem;
         }
+    }
+}
+
+
+
+
+.partners-line {
+    margin-bottom: 24.5rem;
+    
+    &__slider {
+    
+    }
+    
+    &__slider-wrapper {
+    
+    }
+    
+    &__slide {
+        width: 23.2rem;
+        height: 8rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+.partners {
+    margin-bottom: 22rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 45.8rem;
+        height: 45.8rem;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(20rem);
+
+        position: absolute;
+        bottom: -20rem;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: "";
+        width: 25rem;
+        height: 45.8rem;
+        border-radius: 50% 0 0 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(20rem);
+
+        position: absolute;
+        top: -70%;
+        right: 0;
+    }
+    
+    &__title {
+        margin-bottom: 5.2rem;
+    }
+    
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(5, 29rem);
+    }
+    
+    &__box {
+        width: 29rem;
+        height: 14.4rem;
+        position: relative;
+        border: 1px solid #707070;
+        background: #323232;
+        cursor: pointer;
+        transition: 1s;
+
+        &:not(:first-child) {
+            margin-left: -0.1rem;
+        }
+
+        &:not(:nth-child(-n+5)) {
+            margin-top: -0.1rem;
+        }
+
+        img {
+            width: 11.6rem;
+            height: 8.8rem;
+            object-fit: contain;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+        }
+
+        img.color {
+            opacity: 0;
+        }
+
+        &:hover {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            transform: translateY(-3rem);
+
+            img {
+
+                &.gray {
+                    opacity: 0;
+                }
+
+                &.color {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
+.awards {
+    background: #ffffff;
+    padding-top: 22.2rem;
+    padding-bottom: 22.4rem;
+    margin-bottom: 21.5rem;
+
+    &__slider {
+        position: relative;
+    }
+    
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__slide-img {
+        width: 25%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 21.5rem;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &__slide-text-block {
+        width: 70%;
+        padding-top: 1rem;
+    }
+    
+    &__slide-title {
+        @include text (5.2rem, 800, #323232);
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+    
+    &__slide-paragraphs {
+        display: flex;
+        @include text (1.7rem, 400, #808080);
+        line-height: 1.3;
+    }
+    
+    &__slide-text-column {
+
+        &:nth-child(1) {
+            width: 44.6rem;
+        }
+
+        &:nth-child(2) {
+            width: 41.3rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 7.5rem;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 2.6rem;
+            }
+        }
+    }
+    
+    &__control {
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+        z-index: 10;
     }
 }

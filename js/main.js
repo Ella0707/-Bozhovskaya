@@ -149,3 +149,74 @@ const reviewsSwiper = new Swiper('.reviews__slider', {
         },
     },
 });
+
+
+const lineSwiper = new Swiper('.partners-line__slider', {
+    slidesPerView: "auto",
+    loop: true,
+    speed: 800,
+    // centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+});
+
+
+
+const awardsSwiper = new Swiper('.awards__slider', {
+    slidesPerView: 1,
+    speed: 800,
+    navigation: {
+        prevEl: '.awards__slider-arrow-prev',
+        nextEl: '.awards__slider-arrow-next',
+    },
+
+    pagination: {
+        el: '.awards__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+
+
+const projectsSwiper = new Swiper('.banner-project__slider', {
+    slidesPerView: 1,
+    spaceBetween: 60,
+    loop: true,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.banner-project__slider-arrow-prev',
+        nextEl: '.banner-project__slider-arrow-next',
+    },
+
+    pagination: {
+        el: '.banner-project__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});

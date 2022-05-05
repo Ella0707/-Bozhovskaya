@@ -11,6 +11,8 @@
 .control {
     display: flex;
     width: max-content;
+
+   
 }
 
 .arrow {
@@ -33,6 +35,11 @@
 
     .swiper-pagination-current {
         font-weight: 800;
+    }
+
+
+    &.pagination--black {
+        color: #323232;
     }
 }
 
