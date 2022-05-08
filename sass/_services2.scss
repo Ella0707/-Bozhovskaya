@@ -1,0 +1,62 @@
+.services-banner {
+
+
+    
+    &__inner {
+        padding-top: 9rem;
+    }
+    
+    &__title {
+        color: rgba(50, 50, 50, 1);
+        width: 100%;
+        padding-bottom: 4rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.1rem solid rgba(210, 210, 210, 0.7);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+    }
+    
+    &__about {
+        width: 25%;
+    }
+    
+    &__about-title {
+        @include text (2.5rem, 800, #323232);
+        margin-bottom: 2rem;
+    
+    }
+    
+    &__about-subtitle {
+        @include text (2.5rem, 400, #323232);
+    }
+    
+    &__text-block {
+        @include text (1.7rem, 400, rgba(128, 128, 128, 1));
+        line-height: 1.35;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 50%;
+            &:not(:last-child) {
+                padding-right: 3rem;
+            }
+        }
+    
+    }
+    
+    &__photo {
+        height: 47.8rem;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    }
+}
