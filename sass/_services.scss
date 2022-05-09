@@ -259,13 +259,13 @@
         position: relative;
         border: 1px solid #707070;
 
-        &:not(:first-child) {
+        // &:not(:first-child) {
             margin-left: -0.1rem;
-        }
+        // }
 
-        &:not(:nth-child(-n+2)) {
+        // &:not(:nth-child(-n+2)) {
             margin-top: -0.1rem;
-        }
+        // }
     }
     
     &__sticker {
