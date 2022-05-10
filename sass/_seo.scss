@@ -1,0 +1,69 @@
+.banner-about.seo {
+    padding-top: 10rem;
+    margin-bottom: 23rem;
+
+    .banner-about {
+
+        
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0;
+        
+        }
+        
+        &__substrate {
+                width: 120rem;
+                height: 74.4rem;
+                top: -10rem;
+                transform: translateX(-42%);
+        }
+        
+        &__text-block {
+            margin: 0;
+            padding-right: 4rem;
+            padding-top: 8rem;
+        
+        }
+        
+        &__title {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+        
+        &__subtitle {
+            margin-bottom: 6rem;
+            width: 43rem;
+        
+        }
+        
+        &__photo-block {
+            width: 62.9rem;
+            height: 47.1rem;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        
+        }
+    }
+}
+ 
+.article.dark {
+    background: #323232;
+
+    &::before {
+        content: none;
+    }
+}
+
+
+.projects.page-seo {
+    margin-bottom: 22rem;
+}
+
+.our-services.page-seo {
+    padding-top: 0;
+    margin-bottom: 21rem;
+}

@@ -66,6 +66,21 @@
 .steps {
     background: #323232;
     padding-top: 21rem;
+    position: relative; 
+
+    &::before {
+        content: "";
+        width: 20rem;
+        height: 45.8rem;
+        border-radius: 50% 0 0 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(25rem);
+
+        position: absolute;
+        top: 10rem;
+        right: 0;
+    }
     
     &__title-wrap {
         margin-bottom: 6.5rem;
@@ -113,7 +128,23 @@
     background: #323232;
     padding-top: 22rem;
     padding-bottom: 22rem;
-    margin-bottom: 22rem;
+    margin-bottom: 23rem;
+    position: relative; 
+
+    &::before {
+        content: "";
+        width: 45.8rem;
+        height: 45.8rem;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(20rem);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-70%, 50%);
+    }
 
     &__title-wrap {
         margin-bottom: 6rem;
@@ -125,7 +156,7 @@
     }
     
     &__content {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
     
     &__heading-wrap {
@@ -165,6 +196,10 @@
     &__key {
         @include text (2.5rem, 400, rgba(255, 255, 255, 1));
         width: 51%;
+
+        sup {
+            font-size: 1.7rem;
+        }
     }
     
     &__value {
@@ -178,8 +213,8 @@
 }
 
 
-.catalog.catalog--dark {
-
+.catalog.catalog--light {
+    margin-bottom: 18rem;
 
     .catalog {
 
@@ -190,21 +225,28 @@
         &__box-title {
             color: rgba(50, 50, 50, 1);
         }
-
     }
 }
 
 
 .article-big.article-big--dark {
-    padding: 22rem 0;
+    padding: 22rem 0 0 0;
     background: #323232;
     margin-bottom: 0;
 }
 
 .our-services.our-services--dark {
-    padding: 22rem 0;
+    padding: 22rem 0 0rem 0;
     background: #323232;
     margin-bottom: 0;
+
+    .our-services__btn {
+        margin-right: 2rem;
+    }
+
+    .our-services__title-wrap {
+        margin-bottom: 3rem;
+    }
 }
 
 
@@ -216,4 +258,10 @@
 .footer.dark {
     background: #323232;
 
+    &::before {
+        bottom: 0;
+        right: auto;
+        left: 0;
+        transform: translate(-50%, 80%);
+    }
 }

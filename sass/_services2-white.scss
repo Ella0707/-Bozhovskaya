@@ -1,0 +1,62 @@
+.steps.white {
+    background: #ffffff;
+
+    .steps {
+
+        &__box {
+            border: 0.1rem solid #d2d2d2;
+        }
+
+        &__box-stage {
+            color: #323232;
+        }
+
+        &__box-title {
+            color: #323232;
+        }
+    }
+}
+
+
+.price.white {
+    background: #ffffff;
+    padding-bottom: 0;
+
+    .price {
+
+        &__key {
+            color: #323232;
+        }
+
+        &__value {
+            color: #323232;
+
+        }
+    }
+}
+
+
+.our-services.white {
+
+    .our-services {
+        
+        &__box {
+            background: #ffffff;
+
+            &:hover {
+                background: #323232;
+
+                .our-services__box-title {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        &__box-title {
+            color: #323232;
+        }
+
+        
+
+    }
+}

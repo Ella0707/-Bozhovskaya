@@ -270,6 +270,8 @@
     
     &__slide-title {
         @include text (2.5rem, 800, #ffffff);
+        width: 70%;
+        padding-left: 4rem;
     }
     
     &__slide-link {

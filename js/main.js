@@ -220,3 +220,19 @@ const projectsSwiper = new Swiper('.banner-project__slider', {
         },
     },
 });
+
+
+
+$(".projects-nav").ready(function () {
+    var margin = 150; // переменная для контроля докрутки
+    $(".projects-nav__item-link").click(function () { // условия, для всех ссылок или для конкретных
+        $(".projects-nav__item-link").removeClass("active").eq($(this).index()).addClass("active");
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - margin + "px" // .top+margin -  минус, если нужно увеличить отступ
+        }, {
+            duration: 1600, // тут можно контролировать скорость
+            easing: "swing"
+        });
+        return false;
+    });
+});
