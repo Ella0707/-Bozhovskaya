@@ -3694,6 +3694,7 @@ input[type=number] {
 }
 .other-news__title {
   margin-bottom: 5rem;
+  letter-spacing: 1px;
 }
 .other-news__content {
   display: grid;
@@ -3705,7 +3706,7 @@ input[type=number] {
 
 .news-box__img {
   height: 39.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 .news-box__img img {
   height: 100%;
@@ -3716,7 +3717,7 @@ input[type=number] {
   font-size: 1.7rem;
   font-weight: 400;
   color: #242323;
-  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   border-bottom: 1px solid rgba(210, 210, 210, 0.7);
   margin-bottom: 2.8rem;
 }
@@ -3724,12 +3725,16 @@ input[type=number] {
   font-size: 2.4rem;
   font-weight: 800;
   color: #242323;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .news-box__subtitle {
   font-size: 1.7rem;
   font-weight: 400;
   color: #808080;
+}
+
+.header.bg-dark {
+  background: #323232;
 }
 
 /***************************************************

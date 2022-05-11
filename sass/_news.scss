@@ -385,6 +385,7 @@
     
     &__title {
         margin-bottom: 5rem;
+        letter-spacing: 1px;
     }
     
     &__content {
@@ -399,7 +400,7 @@
 
     &__img {
         height: 39.3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3.2rem;
     
         img {
             height: 100%;
@@ -409,14 +410,14 @@
     
     &__date {
         @include text (1.7rem, 400, #242323);
-        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
         border-bottom: 1px solid rgba(210, 210, 210, 0.7);
         margin-bottom: 2.8rem;
     }
     
     &__title {
         @include text (2.4rem, 800, #242323);
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     &__subtitle {
