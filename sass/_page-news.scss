@@ -1,3 +1,54 @@
 .header.bg-dark {
     background: #323232;
 }
+
+.page-news-banner {
+    background: #323232;
+    
+    &__inner {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    
+    }
+    
+    &__title {
+        @include text (5.2rem, 800, rgba(255, 255, 255, 1));
+        text-transform: uppercase;
+        margin-bottom: 4.5rem;
+        width: 40%;
+    
+    }
+    
+    &__subtitle {
+        width: 32%;
+        @include text (1.7rem, 400, rgba(255, 255, 255, 1));
+    }
+}
+
+.all-news {
+    margin-bottom: 25rem;
+
+
+    
+    &__content {
+        display: grid;
+        grid-template-columns: 44.5rem 44.5rem 44.5rem;
+        column-gap: 5.2rem;
+        row-gap: 10rem;
+    
+    }
+    
+    &__box {
+    
+    }
+    .news-box {
+    }
+    .news-box__img {
+    }
+    .news-box__date {
+    }
+    .news-box__title {
+    }
+    .news-box__subtitle {
+    }
+}
