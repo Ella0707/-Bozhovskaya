@@ -236,3 +236,10 @@ $(".projects-nav").ready(function () {
         return false;
     });
 });
+
+// пагинация на странице новостей
+$(".all-news__item").click(function (e) {
+    e.preventDefault();
+    $(".all-news__item").removeClass('active');
+    $(this).addClass('active');
+})
