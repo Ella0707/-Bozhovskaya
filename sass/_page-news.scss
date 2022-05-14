@@ -38,13 +38,15 @@
     }
     
     &__inner {
-        padding-top: 15rem;
+        padding-top: 13rem;
         padding-bottom: 15rem;
     
     }
     
     &__title {
         @include text (5.2rem, 800, rgba(255, 255, 255, 1));
+        line-height: 1;
+        letter-spacing: 1.2px;
         text-transform: uppercase;
         margin-bottom: 4.5rem;
         width: 40%;
@@ -54,6 +56,7 @@
     &__subtitle {
         width: 32%;
         @include text (1.7rem, 400, rgba(255, 255, 255, 1));
+        line-height: 1.35;
     }
 }
 
@@ -67,7 +70,7 @@
         grid-template-columns: 44.5rem 44.5rem 44.5rem;
         column-gap: 5.2rem;
         row-gap: 10rem;
-        margin-bottom: 11.2rem;
+        margin-bottom: 12rem;
     }
 
 
@@ -80,7 +83,7 @@
     }
     
     &__arrow-prev {
-        width: 3.5rem;
+        width: 4.5rem;
         height: 1rem;
         display: flex;
         align-items: center;
@@ -128,7 +131,7 @@
     }
     
     &__arrow-next {
-        width: 3.5rem;
+        width: 4.5rem;
         height: 1rem;
         display: flex;
         align-items: center;

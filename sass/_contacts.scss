@@ -1,0 +1,105 @@
+.contacts {
+    padding-bottom: 4.4rem;
+    padding-top: 8.5rem;
+    margin-bottom: 24rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 45.8rem;
+        height: 45.8rem;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(30rem);
+
+        position: absolute;
+        top: -8rem;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: "";
+        width: 20rem;
+        height: 45.8rem;
+        border-radius: 50% 0 0 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(30rem);
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__map {
+        width: 100%;
+        height: 61.8rem;
+        margin-top: 14rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        iframe {
+            height: 61.8rem;
+            width: 100%;
+        }
+    }
+
+    
+    &__block {
+        width: 59.1rem;
+        background: #ffffff;
+        padding: 13rem 4rem;
+        border: 1.1rem solid #323232;
+        position: relative;
+    }
+    
+    &__block-title {
+        @include text (5.2rem, 800, #242323);
+        margin-bottom: 3.2rem;
+    }
+    
+    &__item-wrap {
+        width: 80%;
+
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+    
+    }
+    
+    &__item-title {
+        @include text (1.6rem, 600, #242323);
+        margin-bottom: 1rem;
+    
+    }
+    
+    &__item-subtitle {
+        @include text (2rem, 400, #808080);
+    }
+}
+
+
+
+
+.feedback.page-contacts {
+
+    &::before {
+        content: "";
+        width: 45.8rem;
+        height: 45.8rem;
+        border-radius: 50%;
+        background: #FFFFFF;
+        opacity: 0.2;
+        filter: blur(30rem);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+}
