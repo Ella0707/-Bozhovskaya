@@ -160,6 +160,28 @@ const lineSwiper = new Swiper('.partners-line__slider', {
       delay: 2500,
       disableOnInteraction: false,
     },
+
+    navigation: {
+        prevEl: '.partners-line__slider-arrow-prev',
+        nextEl: '.partners-line__slider-arrow-next',
+    },
+
+    pagination: {
+        el: '.partners-line__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
 });
 
 

@@ -1,0 +1,80 @@
+
+.banner-404 {
+    position: relative;
+
+
+    &>img {
+        width: 117.9rem;
+        height: 111.9rem;
+        position: absolute;
+        top: -15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit:contain;
+        z-index: -1;
+    }
+
+    
+    &__inner {
+        padding-top: 5rem;
+
+        &>img {
+            width: 76rem;
+            height: 37rem;
+            object-fit: contain;
+            margin: 0 auto 7.7rem auto;
+        }
+    
+    }
+    
+    &__text {
+        width: 64.5rem;
+        margin: 0 auto 4rem auto;
+    }
+    
+    &__heading {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include text (5.2rem, 800, #323232);
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        position: relative;
+
+        span {
+            font-size: 7rem;
+        }
+
+        &::after {
+            content: ":(";
+            color: #323232;
+            font-size: 4rem;
+            font-weight: 400;
+
+            position: absolute;
+            bottom: 1rem;
+            right: -4rem;
+        }
+    
+    }
+    
+    &__subtitle {
+        @include text (2.5rem, 400, #808080);
+        text-align: center;
+        width: 72%;
+        margin: 0 auto;
+    
+    }
+    
+    &__btn {
+        background: #ffffff;
+        margin: 0 auto;
+    }
+}
+
