@@ -1,3 +1,109 @@
+.services-banner {
+    margin-bottom: 21rem;
+}
+
+
+.composition {
+
+
+    &__inner {}
+
+    &__title {
+        margin-bottom: 6rem;
+    }
+
+    &__wrapper-spollers {
+
+    }
+
+    &__spoller-item {
+        position: relative;
+
+        border-top: 0.1rem solid rgba(210, 210, 210, 1);
+
+        &:last-child {
+            border-bottom: 0.1rem solid rgba(210, 210, 210, 1);
+
+        }
+    }
+
+    &__spoller-title-wrap {
+        height: 8.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.active {
+            height: 7rem;
+            .composition__spoller-img {
+                transform: rotate(270deg);
+            }
+        }
+    }
+
+    &__spoller-title {
+        @include text (2.5rem, 800, rgba(50, 50, 50, 1));
+        text-transform: uppercase;
+    }
+
+    &__spoller-img {
+        width: 4rem;
+        height: 1.5rem;
+        transition: ease 0.7s;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__spoller-content {
+        display: flex;
+        padding-bottom: 7.6rem;
+        display: none;
+    }
+
+    &__text-block {
+        @include text (1.7rem, 400, rgba(128, 128, 128, 1));
+        line-height: 1.35;
+        width: 39%;
+        margin-right: 12rem;
+
+        li {
+            padding-left: 2.5rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 0.2rem;
+                height: 0.2rem;
+                border-radius: 50%;
+                background: rgba(128, 128, 128, 1);
+
+                position: absolute;
+                top: 1rem;
+                left: 0;
+            }
+        }
+    }
+
+    &__img {
+        width: 62.7rem;
+        height: 27.5rem;
+        position: absolute;
+        top: 3rem;
+        left: 45.5%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
 .steps.white {
     background: #ffffff;
 
@@ -39,7 +145,7 @@
 .our-services.white {
 
     .our-services {
-        
+
         &__box {
             background: #ffffff;
 
@@ -56,7 +162,7 @@
             color: #323232;
         }
 
-        
+
 
     }
 }

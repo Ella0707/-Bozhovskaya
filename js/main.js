@@ -262,6 +262,14 @@ $(".projects-nav").ready(function () {
 // пагинация на странице новостей
 $(".all-news__item").click(function (e) {
     e.preventDefault();
-    $(".all-news__item").removeClass('active');
-    $(this).addClass('active');
+    $(".all-news__item").addClass('active');
+    $(this).removelass('active');
 })
+
+
+// споллер на странице типовых услуг
+$(document).ready(function () {
+    $('.composition__spoller-title-wrap').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
