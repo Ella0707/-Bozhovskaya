@@ -43,7 +43,7 @@
     
     .banner {
         position: relative;
-        padding-bottom: 21.7rem;
+        padding-bottom: 44rem;
     
         &::before {
             content: "";
@@ -78,6 +78,7 @@
         &__slider {
             width: 100%;
             padding-top: 5.2rem;
+            padding-bottom: 10rem;
         }
     
         &__slide {
@@ -85,67 +86,79 @@
         }
     
         &__left-block {
-            width: 34rem;
-            padding: 7rem 0 0 0rem;
-            margin-right: 9.5rem;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            width: 100%;
+            padding: 0rem 0 9rem 0rem;
+            margin-right: 0rem;
+
+            &::after {
+                content: none;
+            }
+
+            &::before {
+                height: 0.1rem;
+                width: 100%;
+                top: auto;
+                bottom: 1rem;
+            }
         }
     
-        &__left-item {
-            height: 29.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-left: 4rem;
-            border-left: 0.1rem solid #808080;
-        }
+        
     
         &__left-item-img {
-            width: 3.5rem;
-            height: 3.5rem;
-            object-fit: contain;
+            width: 7rem;
+            height: 7rem;
+
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
         }
     
         &__left-item-title {
-            @include text (1.7rem, 700, #FFFFFF);
-            margin-bottom: 2.2rem;
+            font-size: 4rem;
+            margin-bottom: 1.6rem;
         }
     
         &__left-item-subtitle {
-            @include text (1.7rem, 400, #808080);
-            padding-bottom: 1.5rem;
+            font-size: 3.6rem;
+            width: 80%;
+            padding-bottom: 0rem;
+            margin-bottom: 5rem;
         }
     
         &__bg-block {
-            height: 70rem;
+            height: 76rem;
+            margin-bottom: 8rem;
     
             justify-content: flex-start;
         }
     
         &__slide-bg {
             width: 61.4rem;
-            height: 76rem;
+            height: 100%;
         }
     
         &__title-block {
-            width: 72%;
-            padding-bottom: 16rem;
+            width: 100%;
+            padding-bottom: 3rem;
             position: relative;
         }
     
         &__title {
             font-size: 6rem;
-            padding-left: 32rem;
+            width: 57%;
+            margin-left: auto;
         }
     
         &__control {
-            position: absolute;
-            bottom: -0.7rem;
-            right: 0.5rem;
-            z-index: 10;
+            bottom: 2rem;
+            right: 0rem;
+        }
+
+        &__pagination {
+            top: auto;
+            right: auto;
+            left: -6rem;
+            bottom: 1rem;
         }
     }
     
