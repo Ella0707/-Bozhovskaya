@@ -244,6 +244,40 @@ const projectsSwiper = new Swiper('.banner-project__slider', {
 });
 
 
+const projectTypical = new Swiper('.project-typical__content', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    navigation: {
+        prevEl: '.project-typical__slider-arrow-prev',
+        nextEl: '.project-typical__slider-arrow-next',
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+
+    pagination: {
+        el: '.project-typical__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+
+
 
 $(".projects-nav").ready(function () {
     var margin = 150; // переменная для контроля докрутки

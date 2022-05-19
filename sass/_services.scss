@@ -169,6 +169,10 @@
         margin-bottom: 3rem;
     }
 
+    &__title {
+        width: 70%;
+    }
+
     &__btn {
         margin-right: 3rem;
     }
@@ -213,6 +217,32 @@
     
     &__box-subtitle {
         @include text (1.7rem, 400, #808080);
+    }
+
+
+    &.white {
+
+        .additionally__box {
+            border-left: 0.1rem solid #D2D2D2;
+
+            &:last-child {
+                border-right: 0.1rem solid #D2D2D2;
+            }
+        }
+
+
+        .additionally__number {
+            color: #323232;
+        }
+
+        .additionally__key {
+            color: #323232;
+        }
+
+        .additionally__box-title {
+            color: #323232;
+        }
+
     }
 }
 

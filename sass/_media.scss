@@ -81,8 +81,7 @@
         }
     
         &__slide {
-            display: flex;
-            position: relative;
+            flex-direction: column-reverse;
         }
     
         &__left-block {
@@ -121,22 +120,14 @@
         }
     
         &__bg-block {
-            position: relative;
             height: 70rem;
     
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+            justify-content: flex-start;
         }
     
         &__slide-bg {
-            width: 53rem;
-            height: 67rem;
-            object-fit: contain;
-    
-            position: absolute;
-            top: 0;
-            left: 0;
+            width: 61.4rem;
+            height: 76rem;
         }
     
         &__title-block {
@@ -146,9 +137,8 @@
         }
     
         &__title {
-            @include text (11rem, 800, #ffffff);
-            text-transform: uppercase;
-            line-height: 1.05;
+            font-size: 6rem;
+            padding-left: 32rem;
         }
     
         &__control {
