@@ -1,3 +1,12 @@
+// мобильное меню
+$('.header__btn-mobile').on('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('lock');
+    $('.header__btn-mobile').toggleClass("active");
+    $('.header__menu').toggleClass("active");
+});
+
+
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
     spaceBetween: 35,

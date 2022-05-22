@@ -36,8 +36,89 @@
                 object-fit: contain;
             }
         }
+
+        &__tel {
+            font-size: 0;
+            width: 6.8rem;
+            height: 6.8rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     
-      
+        
+        &__menu {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: ease 0.8s;
+            background: rgba(50, 50, 50, 1);
+            z-index: 1000;
+            overflow-y: auto;
+
+            transform: translateX(-100%);
+
+            &.active {
+                transform: translateX(0);
+            }
+        
+        }
+        
+        &__top {
+            padding: 4.4rem 4rem 5rem 4rem;
+            border-bottom: 0.1rem solid rgba(96, 96, 96, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        
+        &__btn-mobile {
+        
+        }
+        
+        &__logo {
+        
+        }
+        
+        
+        &__tel {
+        
+        }
+        
+        &__navigation {
+            padding: 10rem 4rem;
+            
+        
+        }
+        
+        &__nav-list {
+            flex-direction: column;
+            align-items: start;
+
+        
+        }
+        
+        &__nav-item {
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 1);
+
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+        
+        }
     }
     
     
@@ -747,7 +828,10 @@
         
         &__contact {
             width: 100%;
-            margin-bottom: 12rem;
+
+            &.mobile {
+                display: flex;
+            }
         }
         
         &__contact-item {
@@ -766,6 +850,7 @@
         &__form {
             color: #ffffff;
             width: 100%;
+            margin-bottom: 12rem;
         }
         
         &__inputs {

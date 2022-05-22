@@ -4340,6 +4340,77 @@ input[type=number] {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .header__tel {
+    font-size: 0;
+    width: 6.8rem;
+    height: 6.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__tel img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .header__menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: ease 0.8s;
+    transition: ease 0.8s;
+    background: rgb(50, 50, 50);
+    z-index: 1000;
+    overflow-y: auto;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .header__menu.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .header__top {
+    padding: 4.4rem 4rem 5rem 4rem;
+    border-bottom: 0.1rem solid rgb(96, 96, 96);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__navigation {
+    padding: 10rem 4rem;
+  }
+  .header__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header__nav-item {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+  }
+  .header__nav-item:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 
   .banner {
     position: relative;
@@ -4959,7 +5030,11 @@ input[type=number] {
   }
   .feedback__contact {
     width: 100%;
-    margin-bottom: 12rem;
+  }
+  .feedback__contact.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .feedback__contact-item {
     padding-right: 2rem;
@@ -4974,6 +5049,7 @@ input[type=number] {
   .feedback__form {
     color: #ffffff;
     width: 100%;
+    margin-bottom: 12rem;
   }
   .feedback__inputs {
     display: grid;
