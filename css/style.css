@@ -1248,12 +1248,12 @@ input[type=number] {
 }
 .process__slider {
   position: relative;
-  border: 1px solid #707070;
 }
 .process__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid #707070;
 }
 .process__slide-text {
   width: 33.5%;
@@ -4362,6 +4362,7 @@ input[type=number] {
   .header__menu {
     width: 100%;
     height: 100%;
+    padding-bottom: 11.2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -4392,6 +4393,10 @@ input[type=number] {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .header__btn-mob {
+    padding: 0 4rem;
+    margin: 0 4rem 10rem 4rem;
+  }
   .header__navigation {
     padding: 10rem 4rem;
   }
@@ -4410,6 +4415,48 @@ input[type=number] {
   }
   .header__nav-item:not(:last-child) {
     margin-bottom: 8rem;
+  }
+  .header__contact {
+    padding: 10rem 4rem 10rem 4rem;
+    margin-bottom: 10rem;
+    border-top: 0.1rem solid rgb(112, 112, 112);
+    border-bottom: 0.1rem solid rgb(112, 112, 112);
+  }
+  .header__contact-item:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+  .header__contact-name {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: rgb(123, 123, 123);
+    margin-bottom: 2.4rem;
+  }
+  .header__contact-value {
+    font-size: 4re;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+  }
+  .header__social {
+    padding: 0 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.4;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__social-item {
+    width: 6rem;
+    height: 6rem;
+  }
+  .header__social-item:not(:last-child) {
+    margin-right: 8rem;
+  }
+  .header__social-item img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .banner {
@@ -4798,9 +4845,8 @@ input[type=number] {
     left: 0;
   }
   .article__content {
-    padding: 8rem 2rem 1rem 3.8rem;
+    padding: 8rem 2rem 10rem 3.8rem;
     width: 100%;
-    margin-bottom: 9rem;
   }
   .article__text {
     font-size: 3.6rem;
