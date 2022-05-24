@@ -16,6 +16,11 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                
+                <button class="header__btn-mobile mobile">
+                    <img src="./img/mobile-btn.svg" alt="">
+                </button>
+
                 <a class="header__logo logo" href="">
                     <img src="./img/logo.png" alt="">
                 </a>
@@ -37,20 +42,90 @@
                     </ul>
                 </nav>
 
-                <a class="header__tel desctop" href="tel:+74951201420">+7 495 120-14-20</a>
+                <a class="header__tel" href="tel:+74951201420">+7 495 120-14-20
+                    <img class="mobile" src="./img/phone-mob.png" alt="">
+                </a>
 
-                <button class="header__btn-mobile mobile">
-                    <img src="./img/mobile-btn.svg" alt="">
-                </button>
+                <div class="header__menu mobile">
+                    <div class="header__top">
+                        <button class="header__btn-mobile mobile">
+                            <img src="./img/clouse.svg" alt="">
+                        </button>
+
+                        <a class="header__logo logo" href="">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                        <a class="header__tel" href="tel:+74951201420">+7 495 120-14-20
+                            <img class="mobile" src="./img/phone-mob.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="header__navigation">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="">Архитектурное проектирование</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Дизайн интерьера</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Ландшафтное проектирование</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">3D визуализация</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Проекты</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a class="header__btn-mob btn" href="">Все услуги
+                        <img src="./img/arrow.svg" alt="">
+                    </a>
+
+                    <div class="header__contact">
+                        <div class="header__contact-item">
+                            <div class="header__contact-name">Наша почта</div>
+                            <a href="" class="header__contact-value">pochta123@ya.ru</a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-name">Наш телефон</div>
+                            <a href="tel:+74951201420" class="header__contact-value">+7 495 120-14-20</a>
+                        </div>
+                    </div> 
+                    
+                    <div class="header__social">
+                        <a class="header__social-item" href="">
+                            <img src="./img/telegram.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/telegr-icon.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/be-icon.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/viber-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="main">
         <section class="banner-about">
+            <img class="banner-about__substrate" src="./img/signature-about.svg" alt="">
             <div class="container">
                 <div class="banner-about__inner">
-                    <img class="banner-about__substrate" src="./img/signature-about.svg" alt="">
                     <div class="banner-about__text-block">
                         <div class="banner-about__title">студия дизайна
                             Интерьера</div>
@@ -63,7 +138,7 @@
                             развивается успешный бизнес.
                         </div>
                     </div>
-                    <img class="banner-about__img-arrow desctop" src="./img/arrow-long.svg" alt="">
+                    <img class="banner-about__img-arrow" src="./img/arrow-long.svg" alt="">
                 </div>
             </div>
         </section>
@@ -139,31 +214,32 @@
 
         <section class="article page-about">
             <div class="container">
-                <div class="article__title title">Наша миссия</div>
-                <div class="article__inner">
-                    <div class="article__sticker">
-                        20 лет опыта
-                    </div>
-                    <div class="article__content">
-                        <div class="article__text">
-                            <img class="article__quotes" src="./img/quotes.png" alt="">
-                            <img class="article__quotes" src="./img/quotes.png" alt="">
-                            <p>
-                                Amet minim mollit non deserunt ullamco est sit aliqua 
-                                dolor do amet sint. Velit officia consequat duis enim 
-                                velit mollit. Exercitation veniam consequat sunt nostrud amet. 
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
-                                amet sint. Velit officia consequat duis enim velit mollit. 
-                                Exercitation veniam consequat sunt nostrud amet.
-                            </p>
+                <div class="article__wrapper">
+                    <div class="article__title title">Наша миссия</div>
+                    <div class="article__inner">
+                        <div class="article__sticker">
+                            20 лет опыта
                         </div>
-                    </div>
-                    <div class="article__photo">
-                        <img class="desctop" src="./img/logo-dark.svg" alt="">
+                        <div class="article__content">
+                            <div class="article__text">
+                                <img class="article__quotes" src="./img/quotes.png" alt="">
+                                <img class="article__quotes" src="./img/quotes.png" alt="">
+                                <p>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua 
+                                    dolor do amet sint. Velit officia consequat duis enim 
+                                    velit mollit. Exercitation veniam consequat sunt nostrud amet. 
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+                                    amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="article__photo">
+                            <img class="" src="./img/logo-dark.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
 
@@ -490,13 +566,13 @@
                             <img src="./img/telegram.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/twitter.svg" alt="">
+                            <img src="./img/telegr-icon.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/fb.svg" alt="">
+                            <img src="./img/be-icon.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/inst.svg" alt="">
+                            <img src="./img/viber-icon.svg" alt="">
                         </a>
                     </div>
                 </div>
