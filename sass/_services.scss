@@ -335,9 +335,28 @@
             object-fit: cover;
         }
     }
+
     
-    &__box-title {
+    &__slide-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    &__slide-link {
+        width: 4rem;
+        height: 0.6rem;
+
+        img {
+            height: 100%;
+            object-fit: contain
+        }
+    }
+    
+    &__slide-title {
         @include text (2.5rem, 800, #FFFFFF);
+        padding-left: 3rem;
     }
 
     &__btn-more {
