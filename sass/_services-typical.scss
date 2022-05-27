@@ -216,15 +216,8 @@
 .composition {
     margin-bottom: 22rem;
 
-
-    &__inner {}
-
     &__title {
         margin-bottom: 6rem;
-    }
-
-    &__wrapper-spollers {
-
     }
 
     &__spoller-item {
@@ -234,7 +227,6 @@
 
         &:last-child {
             border-bottom: 0.1rem solid rgba(210, 210, 210, 1);
-
         }
     }
 
@@ -243,6 +235,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
 
         &.active {
             .composition__spoller-img {
@@ -273,14 +266,14 @@
 
     &__spoller-content {
         display: flex;
-        padding-bottom: 7.6rem;
+        padding-bottom: 3rem;
     }
 
     &__text-block {
-        @include text (1.7rem, 400, rgba(128, 128, 128, 1));
+        @include text (2rem, 400, rgba(128, 128, 128, 1));
         align-self: center;
         line-height: 1.35;
-        width: 39%;
+        width: 80%;
         margin-right: 12rem;
 
         li {
@@ -315,44 +308,23 @@
 
 .project-typical {
 
-
-    
-    &__inner {
-    
-    }
-    
     &__title-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 3.7rem;
-    
-    }
-    
-    &__title {
-    
     }
     
     &__btn {
         margin-right: 1.5rem;
     }
     
-    &__content {
-    
-    }
-    
-    &__content-wrapper {
-    
-    }
-    
     &__slide {
-
         display: flex;
         padding: 4.4rem 4.4rem 4.4rem 3.3rem;
         background: #ffffff;
         border:  0.1rem solid #D2D2D2;
         position: relative;
-    
     }
     
     &__slide-sticker {
@@ -462,6 +434,7 @@
 .price.white {
     background: #ffffff;
     padding-bottom: 0;
+    padding-top: 0;
 
     .price {
 
@@ -471,7 +444,6 @@
 
         &__value {
             color: #323232;
-
         }
     }
 }
@@ -499,5 +471,18 @@
 
 
 
+    }
+}
+
+
+.catalog.catalog--light {
+
+    .catalog__box {
+        border: 1px solid #D2D2D2;
+    }
+
+    .catalog__slide-title {
+        color: #323232;
+        padding-left: 0;
     }
 }
