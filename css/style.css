@@ -6281,4 +6281,56 @@ input[type=number] {
     color: #323232;
     padding-left: 0;
   }
+
+  .banner-about.seo {
+    padding-top: 5.6rem;
+    margin-bottom: 23rem;
+  }
+  .banner-about.seo .banner-about__inner {
+    display: block;
+    margin-bottom: 10.4rem;
+  }
+  .banner-about.seo .banner-about__substrate {
+    width: 100.6rem;
+    height: 80rem;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateX(-42%);
+    transform: translateX(-15%);
+  }
+  .banner-about.seo .banner-about__text-block {
+    margin: 0;
+    padding-right: 0rem;
+    padding-top: 0rem;
+  }
+  .banner-about.seo .banner-about__title {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  .banner-about.seo .banner-about__subtitle {
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  .banner-about.seo .banner-about__photo-block {
+    width: 45rem;
+    height: 54.7rem;
+    margin-left: auto;
+  }
+
+  .article.dark {
+    background: #323232;
+  }
+  .article.dark::before {
+    content: none;
+  }
+
+  .projects.page-seo {
+    margin-bottom: 22rem;
+  }
+
+  .our-services.page-seo {
+    padding-top: 0;
+    margin-bottom: 21rem;
+  }
 }/*# sourceMappingURL=style.css.map */
