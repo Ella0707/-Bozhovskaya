@@ -16,6 +16,11 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                
+                <button class="header__btn-mobile mobile">
+                    <img src="./img/mobile-btn.svg" alt="">
+                </button>
+
                 <a class="header__logo logo" href="">
                     <img src="./img/logo.png" alt="">
                 </a>
@@ -37,57 +42,134 @@
                     </ul>
                 </nav>
 
-                <a class="header__tel desctop" href="tel:+74951201420">+7 495 120-14-20</a>
+                <a class="header__tel" href="tel:+74951201420">+7 495 120-14-20
+                    <img class="mobile" src="./img/phone-mob.png" alt="">
+                </a>
 
-                <button class="header__btn-mobile mobile">
-                    <img src="./img/mobile-btn.svg" alt="">
-                </button>
+                <div class="header__menu mobile">
+                    <div class="header__top">
+                        <button class="header__btn-mobile mobile">
+                            <img src="./img/clouse.svg" alt="">
+                        </button>
+
+                        <a class="header__logo logo" href="">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                        <a class="header__tel" href="tel:+74951201420">+7 495 120-14-20
+                            <img class="mobile" src="./img/phone-mob.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="header__navigation">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="">Архитектурное проектирование</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Дизайн интерьера</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Ландшафтное проектирование</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">3D визуализация</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Проекты</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">О компании</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a class="header__btn-mob btn" href="">Все услуги
+                        <img src="./img/arrow.svg" alt="">
+                    </a>
+
+                    <div class="header__contact">
+                        <div class="header__contact-item">
+                            <div class="header__contact-name">Наша почта</div>
+                            <a href="" class="header__contact-value">pochta123@ya.ru</a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-name">Наш телефон</div>
+                            <a href="tel:+74951201420" class="header__contact-value">+7 495 120-14-20</a>
+                        </div>
+                    </div> 
+                    
+                    <div class="header__social">
+                        <a class="header__social-item" href="">
+                            <img src="./img/telegram.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/telegr-icon.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/be-icon.svg" alt="">
+                        </a>
+                        <a class="header__social-item" href="">
+                            <img src="./img/viber-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
+
     <main class="main">
         <section class="contacts">
-
-            <div class="contacts__map map" id="map">
-                <div style="position:relative;overflow:hidden;"><a
-                        href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
-                        href="https://yandex.by/maps/213/moscow/house/rochdelskaya_ulitsa_15s1/Z04YcwFmSUADQFtvfXt0d3ViZw==/?ll=37.565758%2C55.756967&utm_medium=mapframe&utm_source=maps&z=19.51"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Рочдельская улица, 15с1 —
-                        Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCUFjHab1B" 
-                        frameborder="1" allowfullscreen="true" style="position:relative;">
-                    </iframe>
-                </div>
-            </div>
-           
-
-            <div class="container">
-                <div class="contacts__block">
-                    <div class="contacts__block-title">НАШИ КОНТАКТЫ</div>
-                    <div class="contacts__item-wrap">
-                        <div class="contacts__item-title">Контактный телефон</div>
-                        <a href="tel:+74951201420" class="contacts__item-subtitle">+7 495 120-14-20</a>
-                    </div>
-                    <div class="contacts__item-wrap">
-                        <div class="contacts__item-title">Электронная почта</div>
-                        <a href="mailto:info@bozhovskaya.com" class="contacts__item-subtitle">info@bozhovskaya.com</a>
-                    </div>
-                    <div class="contacts__item-wrap">
-                        <div class="contacts__item-title">Центральный офис</div>
-                        <div class="contacts__item-subtitle">Москва: ул. Рочдельская, 15, стр.1,, этаж 3, офис 303</div>
-                    </div>
-                    <div class="contacts__item-wrap">
-                        <div class="contacts__item-title">Представительство</div>
-                        <div class="contacts__item-subtitle">Новосибирск: ул. Советская, 23, этаж 2</div>
+            <div class="contacts__inner">
+                <div class="contacts__map map" id="map">
+                    <!-- <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.by/maps/213/moscow/house/rochdelskaya_ulitsa_15s1/Z04YcwFmSUADQFtvfXt0d3ViZw==/?ll=37.565758%2C55.756967&utm_medium=mapframe&utm_source=maps&z=19.51"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Рочдельская улица, 15с1 —
+                            Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCUFjHab1B" 
+                            frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
+                    </div> -->
+                    <div style="position:relative;overflow:hidden;">
+                        <a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                        <a href="https://yandex.by/maps/213/moscow/house/rochdelskaya_ulitsa_15s44/Z04YcwFmTkYAQFtvfXt0d31hZw==/?ll=37.564549%2C55.756177&utm_medium=mapframe&utm_source=maps&z=16.65" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рочдельская улица, 15с44 — Яндекс Карты</a>
+                        <iframe src="https://yandex.by/map-widget/v1/-/CCUJuFT7OA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
                     </div>
                 </div>
+               
+    
+                <div class="container">
+                    <div class="contacts__block">
+                        <div class="contacts__block-title">НАШИ КОНТАКТЫ</div>
+                        <div class="contacts__item-wrap">
+                            <div class="contacts__item-title">Контактный телефон</div>
+                            <a href="tel:+74951201420" class="contacts__item-subtitle">+7 495 120-14-20</a>
+                        </div>
+                        <div class="contacts__item-wrap">
+                            <div class="contacts__item-title">Электронная почта</div>
+                            <a href="mailto:info@bozhovskaya.com" class="contacts__item-subtitle">info@bozhovskaya.com</a>
+                        </div>
+                        <div class="contacts__item-wrap">
+                            <div class="contacts__item-title">Центральный офис</div>
+                            <div class="contacts__item-subtitle">Москва: ул. Рочдельская, 15, стр.1,, этаж 3, офис 303</div>
+                        </div>
+                        <div class="contacts__item-wrap">
+                            <div class="contacts__item-title">Представительство</div>
+                            <div class="contacts__item-subtitle">Новосибирск: ул. Советская, 23, этаж 2</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
        
 
-        <section class="feedback page-contacts">
+      
+        <section class="feedback">
             <div class="container">
                 <div class="feedback__inner">
                     <div class="feedback__content">
@@ -100,7 +182,7 @@
                         </div>
                         <div class="feedback__subtitle">Оставьте заявку или свяжитесь с нами и
                             наши специалисты проконсультируют вас по любому вопросу!</div>
-                        <div class="feedback__contact">
+                        <div class="feedback__contact desctop">
                             <div class="feedback__contact-item">
                                 <div class="feedback__contact-name">Наша почта</div>
                                 <a href="" class="feedback__contact-value">pochta123@ya.ru</a>
@@ -140,6 +222,18 @@
                             </a>
                         </div>
                     </form>
+
+                    <div class="feedback__contact mobile">
+                        <div class="feedback__contact-item">
+                            <div class="feedback__contact-name">Наша почта</div>
+                            <a href="" class="feedback__contact-value">pochta123@ya.ru</a>
+                        </div>
+                        <div class="feedback__contact-item">
+                            <div class="feedback__contact-name">Наш телефон</div>
+                            <a href="tel:+74951201420" class="feedback__contact-value">+7 495 120-14-20</a>
+                        </div>
+                    </div>  
+
                 </div>
             </div>
         </section>
@@ -174,13 +268,13 @@
                             <img src="./img/telegram.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/twitter.svg" alt="">
+                            <img src="./img/telegr-icon.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/fb.svg" alt="">
+                            <img src="./img/be-icon.svg" alt="">
                         </a>
                         <a class="footer__social-item" href="">
-                            <img src="./img/inst.svg" alt="">
+                            <img src="./img/viber-icon.svg" alt="">
                         </a>
                     </div>
                 </div>

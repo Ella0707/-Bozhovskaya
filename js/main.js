@@ -1,3 +1,4 @@
+
 // мобильное меню
 $('.header__btn-mobile').on('click', function (e) {
     e.preventDefault();
@@ -32,19 +33,12 @@ const bannerSwiper = new Swiper('.banner__slider', {
             return number;
         },
     },
-
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true
-    // },
 });
 
 
 const projectsrSwiper = new Swiper('.projects__slider', {
-    // slidesPerView: 2.5,
     slidesPerView: "auto",
     centeredSlides: true,
-    // centeredSlides: true,
     loop: true,
     speed: 800,
     navigation: {
@@ -81,8 +75,6 @@ const projectsrSwiper = new Swiper('.projects__slider', {
 
 const proccesSwiper = new Swiper('.process__slider', {
     slidesPerView: 1,
-    // slidesPerView: "auto",
-    // centeredSlides: true,
     loop: true,
     speed: 800,
     navigation: {
@@ -94,17 +86,6 @@ const proccesSwiper = new Swiper('.process__slider', {
     fadeEffect: {
         crossFade: true
     },
-
-    // effect: "creative",
-    // creativeEffect: {
-    //   prev: {
-    //     shadow: true,
-    //     translate: [0, 0, -400],
-    //   },
-    //   next: {
-    //     translate: ["100%", 0, 0],
-    //   },
-    // },
 
     pagination: {
         el: '.process__pagination',
@@ -126,20 +107,12 @@ const proccesSwiper = new Swiper('.process__slider', {
 
 
 const reviewsSwiper = new Swiper('.reviews__slider', {
-    // slidesPerView: 2,
     slidesPerView: "auto",
-    // centeredSlides: true,
-    // loop: true,
     speed: 800,
     navigation: {
         prevEl: '.reviews__slider-arrow-prev',
         nextEl: '.reviews__slider-arrow-next',
     },
-
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true
-    // },
 
     pagination: {
         el: '.reviews__pagination',
@@ -164,10 +137,9 @@ const lineSwiper = new Swiper('.partners-line__slider', {
     slidesPerView: "auto",
     loop: true,
     speed: 800,
-    // centeredSlides: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: false,
     },
 
     navigation: {
@@ -287,7 +259,6 @@ const projectTypical = new Swiper('.project-typical__content', {
 
 
 
-
 $(".projects-nav").ready(function () {
     var margin = 150; // переменная для контроля докрутки
     $(".projects-nav__item-link").click(function () { // условия, для всех ссылок или для конкретных
@@ -302,12 +273,7 @@ $(".projects-nav").ready(function () {
     });
 });
 
-// пагинация на странице новостей
-$(".all-news__item").click(function (e) {
-    e.preventDefault();
-    $(".all-news__item").addClass('active');
-    $(this).removelass('active');
-})
+
 
 
 // споллер на странице типовых услуг
@@ -316,3 +282,12 @@ $(document).ready(function () {
         $(this).toggleClass('active').next().slideToggle(300);
     });
 });
+
+
+// пагинация на странице новостей
+$(".all-news__item").click(function (e) {
+    e.preventDefault();
+    $(".all-news__item").removeClass('active');
+    $(this).addClass('active');
+});
+

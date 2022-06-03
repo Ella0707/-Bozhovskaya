@@ -716,6 +716,7 @@
             padding: 4.8rem 15rem 7.5rem 3rem;
             display: flex;
             flex-direction: column;
+            border-right: 1px solid #707070;
         }
 
         &__box-info {
@@ -2319,18 +2320,6 @@
 
         .our-services {
 
-            &__box {
-                background: #ffffff;
-
-                &:hover {
-                    background: #323232;
-
-                    .our-services__box-title {
-                        color: #ffffff;
-                    }
-                }
-            }
-
             &__title-wrap {
                 margin-bottom: 8rem;
             }
@@ -2346,9 +2335,6 @@
             &__btn {
                 align-self: start;
             }
-
-
-
         }
     }
 
@@ -2372,7 +2358,6 @@
 
         .banner-about {
 
-
             &__inner {
                 display: block;
                 margin-bottom: 10.4rem;
@@ -2392,7 +2377,6 @@
                 margin: 0;
                 padding-right: 0rem;
                 padding-top: 0rem;
-
             }
 
             &__title {
@@ -2411,7 +2395,6 @@
                 width: 48rem;
                 height: 57rem;
                 margin-left: auto;
-
             }
         }
     }
@@ -2424,7 +2407,6 @@
         }
     }
 
-
     .projects.page-seo {
         margin-bottom: 22rem;
     }
@@ -2434,10 +2416,6 @@
         margin-bottom: 21rem;
     }
     
-
-
-
-
     .news-banner {
         margin-bottom: 12rem;
         padding-top: 6rem;
@@ -2506,7 +2484,7 @@
         }
         
         &__about-block {
-           flex-direction: column;
+            flex-direction: column;
             margin-bottom: 12rem;
         }
         
@@ -2555,8 +2533,6 @@
         }
     }
     
-    
-    
     .news {
         margin-bottom: 25rem;
 
@@ -2597,7 +2573,6 @@
                 margin-bottom: 0;
             }
         }
-        
         
         &__list {
             margin-bottom: 13.5rem;
@@ -2679,8 +2654,7 @@
         
         &__about-news {
             padding: 0 4rem;
-           flex-direction: column;
-        
+            flex-direction: column;
         }
         
         &__about-author {
@@ -2729,14 +2703,12 @@
                 height: 100%;
                 object-fit: contain;
             }
-        
         }
         
         &__social-wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
-        
         }
         
         &__subscribe {
@@ -2746,7 +2718,6 @@
         &__social {
             display: flex;
             align-items: center;
-        
         }
         
         &__social-item {
@@ -2762,11 +2733,8 @@
                 height: 100%;
                 object-fit: contain;
             }
-        
         }
     }
-    
-    
     
     .other-news {
         margin-bottom: 25rem;
@@ -2787,7 +2755,6 @@
             row-gap: 12rem;
         }
     }
-    
     
     .news-box {
     
@@ -2812,5 +2779,195 @@
         }
     }
     
+    .our-services.mini-blocks {
+
+        .our-services {
+
+            &__title-wrap {
+                margin-bottom: 12rem;
+            }
+
+            &__box {
+                padding: 6rem 4rem;
+                display: grid;
+                grid-template-columns: 20rem 42rem;
+                column-gap: 4rem;
+            }
+
+            &__box-title {
+                margin-bottom: 4rem;
+            }
+
+            &__box-img {
+                width: 20rem;
+                height: 16rem;
+                grid-column: 1/2;
+                grid-row: 1/3;
+                margin-bottom: 0;
+            }
+
+            &__box-subtitle {
+                grid-column: 2/3;
+                margin-bottom: 4.2rem;
+            }
+
+            &__box-link {
+                grid-column: 2/3;
+            }
+        }
+    }
+
+
+    .contacts {
+        padding-bottom: 4.4rem;
+        padding-top: 0;
+        margin-bottom: 24rem;
+        position: relative;
+
+        .container {
+            padding: 0;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     
+        &__map {
+            height: 88.6rem;
+            margin-top: 0;
+            position: static;
+
+            div {
+                height: 100%;
+            }
+    
+            iframe {
+                height: 100%;
+                width: 100%;
+                border: none;
+            }
+        }
+        
+        &__block {
+            width: 100%;
+            padding: 10.5rem 4rem;
+            border: none;
+        }
+        
+        &__block-title {
+            font-size: 6rem;
+            margin-bottom: 9rem;
+        }
+        
+        &__item-wrap {
+            width: 100%;
+    
+            &:not(:last-child) {
+                margin-bottom: 5.5rem;
+            }
+        }
+        
+        &__item-title {
+            font-size: 3.2rem;
+            margin-bottom: 2.6rem;
+        }
+        
+        &__item-subtitle {
+            font-size: 4rem;
+        }
+    }
+
+
+    .page-news-banner {
+    
+        &__inner {
+            padding-top: 6rem;
+            padding-bottom: 23.5rem;
+        }
+        
+        &__title {
+            font-size: 6rem;
+            line-height: 1.4;
+            letter-spacing: normal;
+            margin-bottom: 4rem;
+            width: 100%;
+        }
+        
+        &__subtitle {
+            width: 100%;
+            font-size: 3.6rem;
+            line-height: 1.3;
+        }
+    }
+    
+    .all-news {
+        margin-bottom: 24rem;
+        
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 8rem;
+            margin-bottom: 8rem;
+        }
+    
+        &__arrow-prev {
+            width: 8rem;
+            height: 2rem;
+            margin-right: 7.6rem;
+        }
+        
+        &__numbers {
+            margin-right: 7.6rem;
+        }
+        
+        &__item {
+            font-size: 4.4rem;
+    
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            &.active {
+                &::before {
+                    right: -1rem;
+                }
+            }
+    
+            &.active:not(:last-child) {
+                margin-right: 3rem;
+    
+                &::before {
+                    right: -1rem;
+                }
+            }
+        }
+        
+        &__arrow-next {
+            width: 8rem;
+            height: 2rem;
+        }
+    }
+    
+    .timeline {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 24rem;
+        
+        &__item {
+            width: 100%;
+            height: 43.4rem;
+            padding: 7.5rem 4rem;
+        }
+        
+        &__title {
+            font-size: 8rem;
+            padding-left: 4rem;
+    
+            &::before {
+                height: 9.5rem;
+            }
+        }
+    }
 }
