@@ -285,9 +285,9 @@ $(document).ready(function () {
 
 
 // пагинация на странице новостей
-$(".all-news__item").click(function (e) {
+$(".pagination-custom__item").click(function (e) {
     e.preventDefault();
-    $(".all-news__item").removeClass('active');
+    $(".pagination-custom__item").removeClass('active');
     $(this).addClass('active');
 });
 
