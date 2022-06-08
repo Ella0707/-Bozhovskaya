@@ -99,7 +99,8 @@
 
         position: absolute;
         top: 0;
-        left: 47.5%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 10;
     }
 
@@ -125,7 +126,7 @@
     &__left-block {
         width: 34rem;
         padding: 7rem 0 0 0rem;
-        margin-right: 9.5rem;
+        margin-right: 7.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -177,7 +178,7 @@
     &__bg-block {
         position: relative;
         height: 70rem;
-        padding-bottom: 16rem;
+        padding-bottom: 22rem;
 
         display: flex;
         justify-content: flex-end;
@@ -200,7 +201,7 @@
     }
 
     &__title {
-        @include text (11rem, 800, #ffffff);
+        @include text (8rem, 800, #ffffff);
         text-transform: uppercase;
         line-height: 1.05;
     }

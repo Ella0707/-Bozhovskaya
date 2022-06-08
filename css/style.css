@@ -652,7 +652,9 @@ input[type=number] {
      object-fit: contain;
   position: absolute;
   top: 0;
-  left: 47.5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 10;
 }
 .banner__slider {
@@ -669,7 +671,7 @@ input[type=number] {
 .banner__left-block {
   width: 34rem;
   padding: 7rem 0 0 0rem;
-  margin-right: 9.5rem;
+  margin-right: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,7 +724,7 @@ input[type=number] {
 .banner__bg-block {
   position: relative;
   height: 70rem;
-  padding-bottom: 16rem;
+  padding-bottom: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,7 +749,7 @@ input[type=number] {
   position: relative;
 }
 .banner__title {
-  font-size: 11rem;
+  font-size: 8rem;
   font-weight: 800;
   color: #ffffff;
   text-transform: uppercase;
