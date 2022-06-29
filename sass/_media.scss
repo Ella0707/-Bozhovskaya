@@ -455,9 +455,11 @@
 
         &__content {
             margin-left: 10.8rem;
+            height: auto;
         }
 
         &__item {
+            position: static;
 
             &:first-child {
                 margin-left: 0;
